@@ -1,0 +1,14 @@
+<div   *ngFor="let item of itemListResponse">
+    <div   *ngIf="item.ok" >
+
+      <h6 style="color: aquamarine;">
+           {{ item.label}}
+         </h6>
+    </div>
+    <div   *ngIf="!item.ok" >
+
+        <h6  style="color: crimson;">
+             {{ item.label}}
+           </h6 >
+      </div>
+</div>
